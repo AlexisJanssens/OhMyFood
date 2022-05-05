@@ -1,0 +1,13 @@
+.steps {
+    list-style-type: none;
+    &__elements {
+        display: flex;
+        padding-left: 0;
+        background-color: #f6f6f6;
+        justify-content: center;
+        align-items: center;
+        height: 4em;
+        border-radius: 1.5em;
+        
+    }
+}

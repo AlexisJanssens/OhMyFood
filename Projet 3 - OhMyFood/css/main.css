@@ -32,7 +32,7 @@ header .boxhead__localisation {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #eaeaea;
+  background: linear-gradient(#bbbbbb, #eaeaea 5px);
   width: 100%;
   text-align: center;
   font-size: 1.2em;
@@ -103,5 +103,25 @@ header .boxhead__heading .btn__bg {
   transition: opacity 300ms;
   -webkit-box-shadow: #b1b1b1 0em 0.3em 0.5em;
           box-shadow: #b1b1b1 0em 0.3em 0.5em;
+}
+
+.steps {
+  list-style-type: none;
+}
+
+.steps__elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  background-color: #f6f6f6;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4em;
+  border-radius: 1.5em;
 }
 /*# sourceMappingURL=main.css.map */
