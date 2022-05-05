@@ -9,6 +9,7 @@
 
 header h1 {
   text-align: center;
+  margin-bottom: 0.2em;
 }
 
 header .boxhead {
@@ -25,9 +26,25 @@ header .boxhead {
 }
 
 header .boxhead__localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #eaeaea;
   width: 100%;
   text-align: center;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #464646;
+}
+
+header .boxhead__localisation i {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 1em;
 }
 
 header .boxhead__heading {
@@ -50,8 +67,9 @@ header .boxhead__heading p {
   font-weight: 350;
 }
 
-header .boxhead__heading button {
-  background-color: #9356DC;
+header .boxhead__heading .btn {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
   color: white;
   margin-bottom: 3.5em;
   margin-top: 0.8em;
@@ -60,5 +78,30 @@ header .boxhead__heading button {
   border: none;
   border-radius: 2em;
   padding: 0 1.5em 0.1em;
+  -webkit-box-shadow: #c5c5c5 0 0.3em 0.5em;
+          box-shadow: #c5c5c5 0 0.3em 0.5em;
+  position: relative;
+  z-index: 1;
+}
+
+header .boxhead__heading .btn:hover .btn__bg {
+  opacity: 1;
+}
+
+header .boxhead__heading .btn__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b35599), to(#673c9a));
+  background: linear-gradient(#b35599, #673c9a);
+  opacity: 0;
+  border-radius: 2em;
+  -webkit-transition: opacity 300ms;
+  transition: opacity 300ms;
+  -webkit-box-shadow: #b1b1b1 0em 0.3em 0.5em;
+          box-shadow: #b1b1b1 0em 0.3em 0.5em;
 }
 /*# sourceMappingURL=main.css.map */

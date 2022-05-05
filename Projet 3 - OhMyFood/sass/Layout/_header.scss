@@ -1,15 +1,26 @@
 header {
     h1 {
         text-align: center;
+        margin-bottom: 0.2em;
+
     }
     .boxhead {
         display: flex;
         flex-direction: column;
         align-items: center;
         &__localisation {
+            display: flex;
+            justify-content: center;
             background-color: #eaeaea;
             width: 100%;
             text-align: center;
+            font-size: 1.2em;
+            font-weight: 500;
+            color: #464646;
+            i {
+                align-self: center;
+                margin-right: 1em;
+            }
         }
         &__heading {
             text-align: center;
@@ -27,8 +38,8 @@ header {
                 padding: 0 0.5em 1em;
                 font-weight: 350;
             }
-            button {
-                background-color: $clr-prim;
+            .btn {
+                background: linear-gradient($clr-sec, $clr-prim);
                 color: white;
                 margin-bottom: 3.5em;
                 margin-top: 0.8em;
@@ -37,6 +48,29 @@ header {
                 border: none;
                 border-radius: 2em;
                 padding: 0 1.5em 0.1em;
+                box-shadow: #c5c5c5 0 0.3em 0.5em;
+                position: relative;
+                z-index: 1;
+                &:hover {
+                    & .btn__bg {
+                        opacity: 1;
+                    }
+
+                }
+                &__bg {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    z-index: -1;
+                    background: linear-gradient($clr-sec-darken, $clr-prim-darken);
+                    opacity: 0;
+                    border-radius: 2em;
+                    transition: opacity 300ms;
+                    box-shadow: #b1b1b1 0em 0.3em 0.5em;
+
+                }
             }
         }
 
