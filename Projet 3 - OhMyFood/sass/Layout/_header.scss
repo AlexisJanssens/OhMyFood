@@ -1,0 +1,44 @@
+header {
+    h1 {
+        text-align: center;
+    }
+    .boxhead {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__localisation {
+            background-color: #eaeaea;
+            width: 100%;
+            text-align: center;
+        }
+        &__heading {
+            text-align: center;
+            background-color: #f6f6f6;
+            h2 {
+                font-size: 1.8em;
+                padding: 1.5em 1.5em 0.5em;
+                margin: 0;
+                font-weight: 600;
+            }
+            p {
+                font-size: 1.25em;
+                color: gray;
+                margin: 0;
+                padding: 0 0.5em 1em;
+                font-weight: 350;
+            }
+            button {
+                background-color: $clr-prim;
+                color: white;
+                margin-bottom: 3.5em;
+                margin-top: 0.8em;
+                height: 3em;
+                font-size: 1.1em;
+                border: none;
+                border-radius: 2em;
+                padding: 0 1.5em 0.1em;
+            }
+        }
+
+    }
+}

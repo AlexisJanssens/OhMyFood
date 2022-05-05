@@ -1,5 +1,64 @@
 #bloc-page {
-  width: 650px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#bloc-page {
+  width: 375px;
   margin: auto;
+}
+
+header h1 {
+  text-align: center;
+}
+
+header .boxhead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .boxhead__localisation {
+  background-color: #eaeaea;
+  width: 100%;
+  text-align: center;
+}
+
+header .boxhead__heading {
+  text-align: center;
+  background-color: #f6f6f6;
+}
+
+header .boxhead__heading h2 {
+  font-size: 1.8em;
+  padding: 1.5em 1.5em 0.5em;
+  margin: 0;
+  font-weight: 600;
+}
+
+header .boxhead__heading p {
+  font-size: 1.25em;
+  color: gray;
+  margin: 0;
+  padding: 0 0.5em 1em;
+  font-weight: 350;
+}
+
+header .boxhead__heading button {
+  background-color: #9356DC;
+  color: white;
+  margin-bottom: 3.5em;
+  margin-top: 0.8em;
+  height: 3em;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 2em;
+  padding: 0 1.5em 0.1em;
 }
 /*# sourceMappingURL=main.css.map */
