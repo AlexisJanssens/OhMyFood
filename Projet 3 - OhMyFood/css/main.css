@@ -2,6 +2,26 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.boxhead__localisation {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.boxhead__heading h2 {
+  font-size: 1.65em;
+  font-weight: 600;
+}
+
+.boxhead__heading p {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+.btn {
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
 #bloc-page {
   width: 375px;
   margin: auto;
@@ -12,7 +32,7 @@ header h1 {
   margin-bottom: 0.2em;
 }
 
-header .boxhead {
+.boxhead {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,7 +45,7 @@ header .boxhead {
           align-items: center;
 }
 
-header .boxhead__localisation {
+.boxhead__localisation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,46 +55,39 @@ header .boxhead__localisation {
   background: linear-gradient(#bbbbbb, #eaeaea 5px);
   width: 100%;
   text-align: center;
-  font-size: 1.2em;
-  font-weight: 500;
   color: #464646;
 }
 
-header .boxhead__localisation i {
+.boxhead__localisation i {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   margin-right: 1em;
 }
 
-header .boxhead__heading {
+.boxhead__heading {
   text-align: center;
   background-color: #f6f6f6;
 }
 
-header .boxhead__heading h2 {
-  font-size: 1.8em;
+.boxhead__heading h2 {
   padding: 1.5em 1.5em 0.5em;
   margin: 0;
-  font-weight: 600;
 }
 
-header .boxhead__heading p {
-  font-size: 1.25em;
-  color: gray;
+.boxhead__heading p {
+  color: #444444;
   margin: 0;
   padding: 0 0.5em 1em;
-  font-weight: 350;
 }
 
-header .boxhead__heading .btn {
+.btn {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
   margin-bottom: 3.5em;
   margin-top: 0.8em;
   height: 3em;
-  font-size: 1.1em;
   border: none;
   border-radius: 2em;
   padding: 0 1.5em 0.1em;
@@ -84,11 +97,11 @@ header .boxhead__heading .btn {
   z-index: 1;
 }
 
-header .boxhead__heading .btn:hover .btn__bg {
+.btn:hover .btn__bg {
   opacity: 1;
 }
 
-header .boxhead__heading .btn__bg {
+.btn__bg {
   position: absolute;
   top: 0;
   right: 0;
