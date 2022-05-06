@@ -31,6 +31,16 @@
   font-weight: 500;
 }
 
+.name h4 {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.name p {
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
 #bloc-page {
   width: 375px;
   margin: auto;
@@ -189,5 +199,88 @@ header h1 {
 
 .pink i {
   color: #9356DC;
+}
+
+nav {
+  background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 95%;
+  text-decoration: none;
+  color: black;
+}
+
+.card {
+  width: 100%;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  margin-bottom: 2em;
+  overflow: hidden;
+  -webkit-box-shadow: #c5c5c5 0 0.3em 0.5em;
+          box-shadow: #c5c5c5 0 0.3em 0.5em;
+}
+
+.card__img {
+  height: 75%;
+  width: 100%;
+}
+
+.card__img img {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card__description {
+  height: 25%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.name h4 {
+  margin: 0 0 0.25em 1em;
+}
+
+.name p {
+  margin: 0.25em 0 0 1em;
+}
+
+.like {
+  margin-right: 1em;
 }
 /*# sourceMappingURL=main.css.map */

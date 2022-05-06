@@ -1,0 +1,12 @@
+nav {
+    background-color: $background-secondary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    a {
+        display: flex;
+        width: 95%;
+        text-decoration: none;
+        color: black;
+    }
+}
