@@ -1,7 +1,7 @@
 #bloc-page {
     font-family: 'Roboto', sans-serif;
 }
-
+//header
 .boxhead__localisation {
     font-size: $font-size-S;
     font-weight: $font-weight-L;
@@ -21,3 +21,13 @@
      font-size: $font-size-S;
      font-weight: $font-weight-M;
  }
+//working
+.steps__elements {
+    i {
+        font-size: $font-size-M;
+    }
+    p {
+        font-size: $font-size-XS;
+        font-weight: $font-weight-L;
+    }
+}
