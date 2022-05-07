@@ -41,6 +41,10 @@
   font-weight: 300;
 }
 
+.like i {
+  font-size: 1.8em;
+}
+
 #bloc-page {
   width: 375px;
   margin: auto;
@@ -215,11 +219,16 @@ nav {
           align-items: center;
 }
 
+nav h2 {
+  width: 88%;
+  margin-top: 2em;
+}
+
 nav a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 95%;
+  width: 88%;
   text-decoration: none;
   color: black;
 }
@@ -281,6 +290,6 @@ nav a {
 }
 
 .like {
-  margin-right: 1em;
+  margin-right: 1.5em;
 }
 /*# sourceMappingURL=main.css.map */
