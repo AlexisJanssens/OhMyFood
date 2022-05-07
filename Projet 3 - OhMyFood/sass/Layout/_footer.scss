@@ -1,0 +1,26 @@
+footer {
+    background-color: rgb(58, 57, 57);
+    color: white;
+    h3{
+        margin-top: 0;
+        padding-top: 1em ;
+        padding-left: 32px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+    ul{
+        padding-left: 32px;
+        margin-top: .2em;
+        margin-bottom: 0;
+        padding-bottom: .4em;
+    }
+    i{
+        width: 16px;
+        margin-right: .4em;
+    }
+}

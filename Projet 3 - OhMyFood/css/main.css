@@ -45,6 +45,19 @@
   font-size: 1.8em;
 }
 
+footer h3 {
+  font-family: 'Shrikhand', sans-serif;
+  font-size: 1.2em;
+}
+
+footer ul {
+  font-size: 1em;
+}
+
+footer i {
+  font-size: 0.8em;
+}
+
 #bloc-page {
   width: 375px;
   margin: auto;
@@ -217,11 +230,13 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 2em;
+  padding-top: 2em;
+  margin-top: 5em;
 }
 
 nav h2 {
   width: 88%;
-  margin-top: 2em;
 }
 
 nav a {
@@ -231,6 +246,38 @@ nav a {
   width: 88%;
   text-decoration: none;
   color: black;
+}
+
+footer {
+  background-color: #3a3939;
+  color: white;
+}
+
+footer h3 {
+  margin-top: 0;
+  padding-top: 1em;
+  padding-left: 32px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  color: #FF79DA;
+}
+
+footer ul {
+  padding-left: 32px;
+  margin-top: .2em;
+  margin-bottom: 0;
+  padding-bottom: .4em;
+}
+
+footer i {
+  width: 16px;
+  margin-right: .4em;
 }
 
 .card {
