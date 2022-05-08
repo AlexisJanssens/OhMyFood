@@ -5,6 +5,9 @@ header {
 
     }
 }
+
+//homepage
+
 .boxhead {
     display: flex;
     flex-direction: column;
@@ -67,5 +70,15 @@ header {
         transition: opacity 300ms;
         box-shadow: #b1b1b1 0em 0.3em 0.5em;
 
+    }
+}
+
+//à la française
+
+.header__img {
+    width: 100%;
+    img {
+        width: 100%;
+        object-fit: cover;
     }
 }
