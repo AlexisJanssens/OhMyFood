@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Shrikhand';
+  src: url("/police/shrikhand-regular-webfont.woff2") format("woff2"), url("/police/shrikhand-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 #bloc-page {
   font-family: 'Roboto', sans-serif;
 }
@@ -56,6 +63,30 @@ footer ul {
 
 footer i {
   font-size: 0.8em;
+}
+
+.restaurant-name h2 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.8em;
+}
+
+.restaurant-name i {
+  font-size: 1.8em;
+}
+
+.dishes__name {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.dishes__description p {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.dishes__description .price {
+  font-size: 1em;
+  font-weight: 500;
 }
 
 #bloc-page {
@@ -156,6 +187,7 @@ header h1 {
 
 .header__img {
   width: 100%;
+  z-index: -1;
 }
 
 .header__img img {
@@ -188,8 +220,8 @@ header h1 {
           align-items: center;
   height: 4.5em;
   border-radius: 1.5em;
-  -webkit-box-shadow: #dfdfdf 0 0.3em 0.5em;
-          box-shadow: #dfdfdf 0 0.3em 0.5em;
+  -webkit-box-shadow: #c5c5c5 0 0.3em 0.5em;
+          box-shadow: #c5c5c5 0 0.3em 0.5em;
   margin-bottom: 1.4em;
 }
 
@@ -288,6 +320,68 @@ footer ul {
 footer i {
   width: 16px;
   margin-right: .4em;
+}
+
+.menu {
+  background-color: #f6f6f6;
+  margin: 0;
+  position: relative;
+  bottom: 50px;
+  z-index: 1;
+  margin-top: 0;
+  padding-top: 2.2em;
+  border-radius: 2.2em 2.2em;
+}
+
+.restaurant-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.restaurant-name h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 1em;
+}
+
+.restaurant-name i {
+  margin-right: 1.5em;
+}
+
+.dishes {
+  background-color: white;
+  margin: 1em;
+  padding: 0.8em;
+  -webkit-box-shadow: #c5c5c5 0 0.3em 0.5em;
+          box-shadow: #c5c5c5 0 0.3em 0.5em;
+  border-radius: 1em;
+}
+
+.dishes__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dishes__description {
+  padding-top: 0.3em;
+}
+
+.dishes__description p {
+  margin: 0;
+}
+
+.dishes__description .price {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .card {

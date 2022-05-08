@@ -1,3 +1,13 @@
+//import de la police 'Shrikhand'
+@font-face {
+    font-family: 'Shrikhand';
+    src: url('/police/shrikhand-regular-webfont.woff2') format('woff2'),
+         url('/police/shrikhand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 #bloc-page {
     font-family: 'Roboto', sans-serif;
 }
@@ -59,5 +69,33 @@ footer {
     }
     i {
         font-size: $font-size-XXS;
+    }
+}
+
+//à-la-française
+//menu
+.restaurant-name {
+    h2 {
+        font-family: 'Shrikhand', cursive;
+        font-size: $font-size-XXL;
+    }
+    i {
+        font-size: $font-size-XXL;
+    }
+}
+
+.dishes__name {
+    font-size: $font-size-M;
+    font-weight: $font-weight-L;
+}
+
+.dishes__description {
+    p {
+        font-size: $font-size-XS;
+        font-weight: $font-weight-S;
+    }
+    .price {
+        font-size: $font-size-XS;
+        font-weight: $font-weight-L;
     }
 }

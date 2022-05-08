@@ -7,8 +7,7 @@
     border-radius: 15px;
     margin-bottom: 2em;
     overflow: hidden;
-    box-shadow: #c5c5c5 0 0.3em 0.5em;
-
+    @include shadowbox;
 }
 
 
