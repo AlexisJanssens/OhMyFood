@@ -74,6 +74,15 @@ footer i {
   font-size: 1.8em;
 }
 
+.type h3 {
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+.type .underline {
+  font-size: 1.1em;
+}
+
 .dishes__name {
   font-size: 1.2em;
   font-weight: 500;
@@ -92,6 +101,10 @@ footer i {
 #bloc-page {
   width: 375px;
   margin: auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 header h1 {
@@ -183,6 +196,35 @@ header h1 {
   transition: opacity 300ms;
   -webkit-box-shadow: #b1b1b1 0em 0.3em 0.5em;
           box-shadow: #b1b1b1 0em 0.3em 0.5em;
+}
+
+.arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.arrow img {
+  margin: auto;
+}
+
+.arrow i {
+  position: absolute;
+  top: 3px;
+  left: 1em;
+  font-size: 28px;
+  color: black;
+}
+
+.arrow i:hover {
+  color: #99E2D0;
 }
 
 .header__img {
@@ -293,11 +335,12 @@ nav a {
 footer {
   background-color: #3a3939;
   color: white;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }
 
 footer h3 {
   margin-top: 0;
-  padding-top: 1em;
   padding-left: 32px;
 }
 
@@ -330,7 +373,14 @@ footer i {
   z-index: 1;
   margin-top: 0;
   padding-top: 2.2em;
-  border-radius: 2.2em 2.2em;
+  border-radius: 2.2em 2.2em 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .restaurant-name {
@@ -350,6 +400,23 @@ footer i {
 
 .restaurant-name i {
   margin-right: 1.5em;
+}
+
+.type {
+  margin-bottom: 2.5em;
+}
+
+.type h3 {
+  text-transform: uppercase;
+  padding-left: 1.3em;
+  margin-bottom: 0.25em;
+}
+
+.type .underline {
+  height: 3px;
+  width: 11%;
+  background-color: #99E2D0;
+  margin-left: 1.3em;
 }
 
 .dishes {
@@ -382,6 +449,19 @@ footer i {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.menu .btn {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0em 3em 0 3em;
+  margin-top: 0;
+}
+
+.not-homepage {
+  position: relative;
+  bottom: 50px;
 }
 
 .card {

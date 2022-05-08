@@ -75,6 +75,38 @@ header {
 
 //à la française
 
+.arrow {
+    display: flex;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    img {
+        margin: auto;
+    }
+    i {
+        position: absolute;
+        top: 3px;
+        left: 1em;
+        font-size: 28px;
+        color: black;
+        &:hover {
+            color: $color-tertiary;
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
 .header__img {
     width: 100%;
     z-index: -1;
