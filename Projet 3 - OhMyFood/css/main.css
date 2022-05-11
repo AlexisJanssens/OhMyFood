@@ -49,7 +49,7 @@
 }
 
 .like i {
-  font-size: 1.8em;
+  font-size: 1.7em;
 }
 
 footer h3 {
@@ -67,11 +67,11 @@ footer i {
 
 .restaurant-name h2 {
   font-family: 'Shrikhand', cursive;
-  font-size: 1.8em;
+  font-size: 1.7em;
 }
 
 .restaurant-name i {
-  font-size: 1.8em;
+  font-size: 1.7em;
 }
 
 .type h3 {
@@ -96,6 +96,11 @@ footer i {
 .dishes__description .price {
   font-size: 1em;
   font-weight: 500;
+}
+
+body {
+  width: 375px;
+  margin: auto;
 }
 
 #bloc-page {
@@ -161,43 +166,6 @@ header h1 {
   padding: 0 0.5em 1em;
 }
 
-.btn {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
-  color: white;
-  margin-bottom: 3.5em;
-  margin-top: 0.8em;
-  height: 3em;
-  border: none;
-  border-radius: 2em;
-  padding: 0 1.5em 0.1em;
-  -webkit-box-shadow: #c5c5c5 0 0.3em 0.5em;
-          box-shadow: #c5c5c5 0 0.3em 0.5em;
-  position: relative;
-  z-index: 1;
-}
-
-.btn:hover .btn__bg {
-  opacity: 1;
-}
-
-.btn__bg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  background: -webkit-gradient(linear, left top, left bottom, from(#b35599), to(#673c9a));
-  background: linear-gradient(#b35599, #673c9a);
-  opacity: 0;
-  border-radius: 2em;
-  -webkit-transition: opacity 300ms;
-  transition: opacity 300ms;
-  -webkit-box-shadow: #b1b1b1 0em 0.3em 0.5em;
-          box-shadow: #b1b1b1 0em 0.3em 0.5em;
-}
-
 .arrow {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -220,20 +188,25 @@ header h1 {
   top: 3px;
   left: 1em;
   font-size: 28px;
+}
+
+.arrow a i {
   color: black;
 }
 
-.arrow i:hover {
-  color: #99E2D0;
+.arrow a i:hover {
+  color: #FF79DA;
 }
 
 .header__img {
   width: 100%;
+  height: 250px;
   z-index: -1;
 }
 
 .header__img img {
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -262,8 +235,8 @@ header h1 {
           align-items: center;
   height: 4.5em;
   border-radius: 1.5em;
-  -webkit-box-shadow: #c5c5c5 0 0.3em 0.5em;
-          box-shadow: #c5c5c5 0 0.3em 0.5em;
+  -webkit-box-shadow: #dbdbdb 0 0.3em 0.5em;
+          box-shadow: #dbdbdb 0 0.3em 0.5em;
   margin-bottom: 1.4em;
 }
 
@@ -395,11 +368,11 @@ footer i {
 .restaurant-name h2 {
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 1em;
+  padding-left: 0.8em;
 }
 
 .restaurant-name i {
-  margin-right: 1.5em;
+  margin-right: 1.2em;
 }
 
 .type {
@@ -423,8 +396,8 @@ footer i {
   background-color: white;
   margin: 1em;
   padding: 0.8em;
-  -webkit-box-shadow: #c5c5c5 0 0.3em 0.5em;
-          box-shadow: #c5c5c5 0 0.3em 0.5em;
+  -webkit-box-shadow: #dbdbdb 0 0.3em 0.5em;
+          box-shadow: #dbdbdb 0 0.3em 0.5em;
   border-radius: 1em;
 }
 
@@ -435,6 +408,7 @@ footer i {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  text-transform: none;
 }
 
 .dishes__description {
@@ -480,8 +454,8 @@ footer i {
   border-radius: 15px;
   margin-bottom: 2em;
   overflow: hidden;
-  -webkit-box-shadow: #c5c5c5 0 0.3em 0.5em;
-          box-shadow: #c5c5c5 0 0.3em 0.5em;
+  -webkit-box-shadow: #dbdbdb 0 0.3em 0.5em;
+          box-shadow: #dbdbdb 0 0.3em 0.5em;
 }
 
 .card__img {
@@ -522,5 +496,42 @@ footer i {
 
 .like {
   margin-right: 1.5em;
+}
+
+.btn {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  margin-bottom: 3.5em;
+  margin-top: 0.8em;
+  height: 3em;
+  border: none;
+  border-radius: 2em;
+  padding: 0 1.5em 0.1em;
+  -webkit-box-shadow: #dbdbdb 0 0.3em 0.5em;
+          box-shadow: #dbdbdb 0 0.3em 0.5em;
+  position: relative;
+  z-index: 1;
+}
+
+.btn:hover .btn__bg {
+  opacity: 1;
+}
+
+.btn__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b35599), to(#673c9a));
+  background: linear-gradient(#b35599, #673c9a);
+  opacity: 0;
+  border-radius: 2em;
+  -webkit-transition: opacity 300ms;
+  transition: opacity 300ms;
+  -webkit-box-shadow: #b1b1b1 0em 0.3em 0.5em;
+          box-shadow: #b1b1b1 0em 0.3em 0.5em;
 }
 /*# sourceMappingURL=main.css.map */

@@ -40,40 +40,7 @@ header {
     }
 }
 
-.btn {
-    background: linear-gradient($color-secondary, $color-primary);
-    color: white;
-    margin-bottom: 3.5em;
-    margin-top: 0.8em;
-    height: 3em;
-    border: none;
-    border-radius: 2em;
-    padding: 0 1.5em 0.1em;
-    @include shadowbox;
-    position: relative;
-    z-index: 1;
-    &:hover {
-        & .btn__bg {
-            opacity: 1;
-        }
-    }
-    &__bg {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
-        background: linear-gradient($color-secondary-darken, $color-primary-darken);
-        opacity: 0;
-        border-radius: 2em;
-        transition: opacity 300ms;
-        box-shadow: #b1b1b1 0em 0.3em 0.5em;
-
-    }
-}
-
-//à la française
+//menus
 
 .arrow {
     display: flex;
@@ -92,26 +59,27 @@ header {
         top: 3px;
         left: 1em;
         font-size: 28px;
-        color: black;
-        &:hover {
-            color: $color-tertiary;
-        }
     }
-    
 }
 
-
-
-
-
-
-
+.arrow {
+    a{
+        i {
+            color: black;
+        }
+        i:hover {
+        color: $color-secondary;
+        }   
+    }
+}
 
 .header__img {
     width: 100%;
+    height: 250px;
     z-index: -1;
     img {
         width: 100%;
+        height: 100%;
         object-fit: cover;
     }
 }
