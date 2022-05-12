@@ -392,13 +392,44 @@ footer i {
   margin-left: 1.3em;
 }
 
+.test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .dishes {
   background-color: white;
   margin: 1em;
+  margin-right: 0;
   padding: 0.8em;
   -webkit-box-shadow: #dbdbdb 0 0.3em 0.5em;
           box-shadow: #dbdbdb 0 0.3em 0.5em;
   border-radius: 1em;
+  width: 85%;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.dishes:hover {
+  border-radius: 1em 0 0 1em;
+}
+
+.dishes:hover + .validate {
+  padding-right: .8em;
+  padding-left: .8em;
+  width: 50px;
+  border-radius: 0 1em 1em 0;
+}
+
+.dishes:hover + .validate i {
+  -webkit-transform: translateY(0%) rotate(0deg);
+          transform: translateY(0%) rotate(0deg);
 }
 
 .dishes__description {
@@ -409,6 +440,38 @@ footer i {
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-transform: none;
+}
+
+.validate {
+  background-color: #99E2D0;
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-box-shadow: #dbdbdb 0 0.3em 0.5em;
+          box-shadow: #dbdbdb 0 0.3em 0.5em;
+  border-radius: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 75.6px;
+  width: 0%;
+  overflow: hidden;
+  margin: 1em;
+  margin-left: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.validate i {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: white;
+  font-size: 1.65em;
+  margin: auto;
+  -webkit-transform: translateX(100%) rotate(360deg);
+          transform: translateX(100%) rotate(360deg);
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .dishes__description {
@@ -525,8 +588,8 @@ footer i {
   bottom: 0;
   left: 0;
   z-index: -1;
-  background: -webkit-gradient(linear, left top, left bottom, from(#b35599), to(#673c9a));
-  background: linear-gradient(#b35599, #673c9a);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fc8cdc), to(#9c66df));
+  background: linear-gradient(#fc8cdc, #9c66df);
   opacity: 0;
   border-radius: 2em;
   -webkit-transition: opacity 300ms;

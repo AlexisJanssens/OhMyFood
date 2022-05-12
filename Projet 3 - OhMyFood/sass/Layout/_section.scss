@@ -39,22 +39,69 @@
 
     }
 }
+.test {
+    display: flex;
+}
 
 .dishes {
     background-color: white;
     margin: 1em;
+    margin-right: 0;
     padding: 0.8em;
     @include shadowbox;
     border-radius: 1em;
+    width: 85%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 1s;
+    &:hover {
+        border-radius: 1em 0 0 1em;
+    }
+    &:hover + .validate {
+        padding-right: .8em;
+        padding-left: .8em;
+        width: 50px;
+        border-radius: 0 1em 1em 0;
+        i{
+            transform:  translateY(0%) rotate(0deg);
+        }
+    }
     &__name {
 
     }
     &__description {
         display: flex;
         justify-content: space-between;
-        text-transform: none;
-    }
+        text-transform: none; 
+        
+    } 
+}
 
+.validate {
+    background-color: $color-tertiary;
+    padding-left: 0;
+    padding-right: 0;
+    @include shadowbox;
+    border-radius: 1em;
+    display: flex;
+    height: 75.6px;
+    width: 0%;
+    overflow: hidden;
+    margin: 1em;
+    margin-left: 0;
+    transition: all 1s;
+    i{
+        align-self: center;
+        color: white;
+        font-size: $font-size-XL;
+        margin: auto;
+        transform: translateX(100%) rotate(360deg);
+        transition: all 1s;
+
+    }
 }
 
 .dishes__description {
