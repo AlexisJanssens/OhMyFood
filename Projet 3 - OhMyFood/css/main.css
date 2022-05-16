@@ -396,40 +396,54 @@ footer i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 1em;
+  padding: 0;
+  border-radius: 1em;
+  overflow: hidden;
+  -webkit-box-shadow: #dbdbdb 0 0.3em 0.5em;
+          box-shadow: #dbdbdb 0 0.3em 0.5em;
+}
+
+.border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1em;
+  padding: 0;
+  border-radius: 1em;
+  overflow: hidden;
+  -webkit-box-shadow: #dbdbdb 0 0.3em 0.5em;
+          box-shadow: #dbdbdb 0 0.3em 0.5em;
 }
 
 .dishes {
   background-color: white;
-  margin: 1em;
+  margin: 0;
   margin-right: 0;
   padding: 0.8em;
   -webkit-box-shadow: #dbdbdb 0 0.3em 0.5em;
           box-shadow: #dbdbdb 0 0.3em 0.5em;
-  border-radius: 1em;
-  width: 85%;
-  position: relative;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
   -webkit-transition: all 1s;
   transition: all 1s;
-}
-
-.dishes:hover {
-  border-radius: 1em 0 0 1em;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .dishes:hover + .validate {
-  padding-right: .8em;
-  padding-left: .8em;
+  padding-right: 1em;
+  padding-left: 1em;
   width: 50px;
-  border-radius: 0 1em 1em 0;
 }
 
 .dishes:hover + .validate i {
   -webkit-transform: translateY(0%) rotate(0deg);
           transform: translateY(0%) rotate(0deg);
+}
+
+.dishes__name {
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .dishes__description {
@@ -448,17 +462,16 @@ footer i {
   padding-right: 0;
   -webkit-box-shadow: #dbdbdb 0 0.3em 0.5em;
           box-shadow: #dbdbdb 0 0.3em 0.5em;
-  border-radius: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 75.6px;
   width: 0%;
   overflow: hidden;
-  margin: 1em;
+  margin: 0;
   margin-left: 0;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
 }
 
 .validate i {
@@ -468,10 +481,12 @@ footer i {
   color: white;
   font-size: 1.65em;
   margin: auto;
-  -webkit-transform: translateX(100%) rotate(360deg);
-          transform: translateX(100%) rotate(360deg);
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transform: translateX(100%) rotate(-720deg);
+          transform: translateX(100%) rotate(-720deg);
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .dishes__description {
@@ -480,12 +495,15 @@ footer i {
 
 .dishes__description p {
   margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .dishes__description .price {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  padding-left: 1em;
 }
 
 .menu .btn {
