@@ -565,6 +565,7 @@ footer i {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  overflow: hidden;
 }
 
 .name h4 {
@@ -577,6 +578,42 @@ footer i {
 
 .like {
   margin-right: 1.5em;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 27.2px;
+  width: 27.2px;
+}
+
+.like .fa-solid {
+  color: #FF79DA;
+  position: absolute;
+  left: 0;
+  z-index: 0;
+}
+
+.like .fa-regular {
+  z-index: 2;
+  position: absolute;
+}
+
+.like .fa-regular:hover + .white {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.like .white {
+  z-index: 1;
+  position: absolute;
+  height: 27.2px;
+  width: 27.2px;
+  background-color: white;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  -webkit-transition: all 800ms ease-out;
+  transition: all 800ms ease-out;
 }
 
 .btn {
