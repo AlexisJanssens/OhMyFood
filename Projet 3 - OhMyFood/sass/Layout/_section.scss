@@ -69,13 +69,29 @@
     @include shadowbox;
     animation: menu-translate 1000ms 300ms both;
 }
+
+.test4 {
+    display: flex;
+    margin: 1em;
+    padding: 0;
+    border-radius: 1em;
+    overflow: hidden;
+    @include shadowbox;
+    animation: menu-translate 1000ms 450ms both;
+}
 @keyframes menu-translate {
     0% {
         transform: translateY(500%);
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
     }
 
     100% {
         transform: translateY(0%);
+        opacity: 1;
     }
 }
 

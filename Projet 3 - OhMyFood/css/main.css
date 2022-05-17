@@ -435,14 +435,33 @@ footer i {
           animation: menu-translate 1000ms 300ms both;
 }
 
+.test4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1em;
+  padding: 0;
+  border-radius: 1em;
+  overflow: hidden;
+  -webkit-box-shadow: #dbdbdb 0 0.3em 0.5em;
+          box-shadow: #dbdbdb 0 0.3em 0.5em;
+  -webkit-animation: menu-translate 1000ms 450ms both;
+          animation: menu-translate 1000ms 450ms both;
+}
+
 @-webkit-keyframes menu-translate {
   0% {
     -webkit-transform: translateY(500%);
             transform: translateY(500%);
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
+    opacity: 1;
   }
 }
 
@@ -450,10 +469,15 @@ footer i {
   0% {
     -webkit-transform: translateY(500%);
             transform: translateY(500%);
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
+    opacity: 1;
   }
 }
 
