@@ -377,6 +377,7 @@ footer i {
 
 .type {
   margin-bottom: 2.5em;
+  overflow: hidden;
 }
 
 .type h3 {
@@ -402,6 +403,58 @@ footer i {
   overflow: hidden;
   -webkit-box-shadow: #dbdbdb 0 0.3em 0.5em;
           box-shadow: #dbdbdb 0 0.3em 0.5em;
+  -webkit-animation: menu-translate 1000ms;
+          animation: menu-translate 1000ms;
+}
+
+.test2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1em;
+  padding: 0;
+  border-radius: 1em;
+  overflow: hidden;
+  -webkit-box-shadow: #dbdbdb 0 0.3em 0.5em;
+          box-shadow: #dbdbdb 0 0.3em 0.5em;
+  -webkit-animation: menu-translate 1000ms 150ms both;
+          animation: menu-translate 1000ms 150ms both;
+}
+
+.test3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1em;
+  padding: 0;
+  border-radius: 1em;
+  overflow: hidden;
+  -webkit-box-shadow: #dbdbdb 0 0.3em 0.5em;
+          box-shadow: #dbdbdb 0 0.3em 0.5em;
+  -webkit-animation: menu-translate 1000ms 300ms both;
+          animation: menu-translate 1000ms 300ms both;
+}
+
+@-webkit-keyframes menu-translate {
+  0% {
+    -webkit-transform: translateY(500%);
+            transform: translateY(500%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes menu-translate {
+  0% {
+    -webkit-transform: translateY(500%);
+            transform: translateY(500%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
 }
 
 .border {

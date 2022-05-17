@@ -26,6 +26,7 @@
 
 .type {
     margin-bottom: 2.5em;
+    overflow: hidden;
     h3 {
         text-transform: uppercase;
         padding-left: 1.3em;
@@ -46,6 +47,36 @@
     border-radius: 1em;
     overflow: hidden;
     @include shadowbox;
+    animation: menu-translate 1000ms;
+}
+
+.test2 {
+    display: flex;
+    margin: 1em;
+    padding: 0;
+    border-radius: 1em;
+    overflow: hidden;
+    @include shadowbox;
+    animation: menu-translate 1000ms 150ms both;
+}
+
+.test3 {
+    display: flex;
+    margin: 1em;
+    padding: 0;
+    border-radius: 1em;
+    overflow: hidden;
+    @include shadowbox;
+    animation: menu-translate 1000ms 300ms both;
+}
+@keyframes menu-translate {
+    0% {
+        transform: translateY(500%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
 }
 
 .border {
@@ -68,6 +99,7 @@
     transition: all 1s;
     overflow: hidden;
     white-space: nowrap;
+    
     &:hover + .validate {
         padding-right: 1em;
         padding-left: 1em;
@@ -125,6 +157,8 @@
         padding-left: 1em;
     }
 }
+
+
 
 .menu .btn {
     align-self: center;
