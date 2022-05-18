@@ -20,6 +20,14 @@
     border-radius: 1.5em;
     @include shadowbox;
     margin-bottom: 1.4em ;
+    transition: all 400ms;
+    &:hover {
+        background-color: #fcf4ff;
+        i {
+            color: $color-primary;
+        }
+    }
+        
         .number {
             position: absolute;
             display: flex;
@@ -38,14 +46,10 @@
             margin: 0 1em 0 2em;
             width: 21.6px;
             color: #7e7d7d;
+            transition: all 400ms;
         }
     }
 
-    .pink {
-        background-color: #fcf4ff;
-        i {
-            color: $color-primary;
-        }
-    }
+   
 
 
