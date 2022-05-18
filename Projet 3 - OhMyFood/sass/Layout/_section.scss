@@ -14,6 +14,7 @@
 .restaurant-name {
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
     h2 {
         margin-top: 0;
         margin-bottom: 0;
@@ -21,7 +22,49 @@
     }
     i {
         margin-right: 1.2em;
+        position: relative;
+        &:hover {
+            .white_menu_header {
+                transform: translateY(-100%);
+            }
+            &::before {
+                opacity: 0;
+            }
+        }
+
+        &::before {
+            z-index: 1;
+            position: relative;
+            transition: all 800ms ease-out;
+        }
+        
+        &::after {
+            content: "\f004";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 1;
+            color: $color-secondary;
+        }
     }
+}
+
+.white_menu_header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $background-secondary;
+    z-index: 0;
+    transform: translateY(0%);
+    transition: all 800ms ease-out;
+
 }
 
 .type {

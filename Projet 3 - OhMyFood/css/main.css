@@ -48,6 +48,11 @@
   font-weight: 300;
 }
 
+.new {
+  font-size: 1em;
+  font-weight: 600;
+}
+
 .like i {
   font-size: 1.7em;
 }
@@ -363,6 +368,7 @@ footer i {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  overflow: hidden;
 }
 
 .restaurant-name h2 {
@@ -373,6 +379,51 @@ footer i {
 
 .restaurant-name i {
   margin-right: 1.2em;
+  position: relative;
+}
+
+.restaurant-name i:hover .white_menu_header {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.restaurant-name i:hover::before {
+  opacity: 0;
+}
+
+.restaurant-name i::before {
+  z-index: 1;
+  position: relative;
+  -webkit-transition: all 800ms ease-out;
+  transition: all 800ms ease-out;
+}
+
+.restaurant-name i::after {
+  content: "\f004";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 1;
+  color: #FF79DA;
+}
+
+.white_menu_header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #f6f6f6;
+  z-index: 0;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  -webkit-transition: all 800ms ease-out;
+  transition: all 800ms ease-out;
 }
 
 .type {
@@ -598,7 +649,7 @@ footer i {
 
 .card {
   width: 100%;
-  height: 300px;
+  height: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -617,8 +668,9 @@ footer i {
 }
 
 .card__img {
-  height: 75%;
+  height: 70%;
   width: 100%;
+  position: relative;
 }
 
 .card__img img {
@@ -629,8 +681,17 @@ footer i {
      object-fit: cover;
 }
 
+.card__img .new {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  color: #189576;
+  background-color: #99e2d0;
+  padding: 0.45em 0.8em;
+}
+
 .card__description {
-  height: 25%;
+  height: 30%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -669,11 +730,18 @@ footer i {
   position: absolute;
   left: 0;
   z-index: 0;
+  opacity: 1;
 }
 
 .like .fa-regular {
   z-index: 2;
   position: absolute;
+  -webkit-transition: opacity 800ms;
+  transition: opacity 800ms;
+}
+
+.like .fa-regular:hover {
+  opacity: 0;
 }
 
 .like .fa-regular:hover + .white {
