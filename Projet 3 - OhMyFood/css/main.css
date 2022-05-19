@@ -106,20 +106,33 @@ footer i {
 body {
   width: 375px;
   margin: auto;
+  margin-bottom: 0;
 }
 
 #bloc-page {
   width: 375px;
   margin: auto;
+  margin-bottom: 0;
 }
 
 a {
   text-decoration: none;
 }
 
+@media all and (min-width: 375px) and (max-width: 810px) {
+  body {
+    width: auto;
+  }
+  #bloc-page {
+    width: auto;
+  }
+}
+
 header h1 {
   text-align: center;
   margin-bottom: 0.2em;
+  margin-top: 0;
+  padding-top: 0.5em;
 }
 
 .boxhead {
@@ -180,8 +193,10 @@ header h1 {
   bottom: 0;
   right: 0;
   left: 0;
-  margin-bottom: 1em;
-  margin-top: 1em;
+  margin-bottom: 0.5em;
+  margin-top: 0;
+  padding-top: 0.5em;
+  font-size: 28px;
 }
 
 .arrow img {
@@ -190,7 +205,7 @@ header h1 {
 
 .arrow i {
   position: absolute;
-  top: 3px;
+  top: 0.63em;
   left: 1em;
   font-size: 28px;
 }
@@ -214,6 +229,12 @@ header h1 {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media all and (min-width: 375px) and (max-width: 810px) {
+  .boxhead__heading {
+    width: 100%;
+  }
 }
 
 #working {
@@ -458,8 +479,8 @@ footer i {
   overflow: hidden;
   -webkit-box-shadow: #dbdbdb 0 0.3em 0.5em;
           box-shadow: #dbdbdb 0 0.3em 0.5em;
-  -webkit-animation: menu-translate 1000ms;
-          animation: menu-translate 1000ms;
+  -webkit-animation: menu-translate 1000ms 2000ms both;
+          animation: menu-translate 1000ms 2000ms both;
 }
 
 .test2 {
@@ -472,8 +493,8 @@ footer i {
   overflow: hidden;
   -webkit-box-shadow: #dbdbdb 0 0.3em 0.5em;
           box-shadow: #dbdbdb 0 0.3em 0.5em;
-  -webkit-animation: menu-translate 1000ms 150ms both;
-          animation: menu-translate 1000ms 150ms both;
+  -webkit-animation: menu-translate 1000ms 2150ms both;
+          animation: menu-translate 1000ms 2150ms both;
 }
 
 .test3 {
@@ -486,8 +507,8 @@ footer i {
   overflow: hidden;
   -webkit-box-shadow: #dbdbdb 0 0.3em 0.5em;
           box-shadow: #dbdbdb 0 0.3em 0.5em;
-  -webkit-animation: menu-translate 1000ms 300ms both;
-          animation: menu-translate 1000ms 300ms both;
+  -webkit-animation: menu-translate 1000ms 2300ms both;
+          animation: menu-translate 1000ms 2300ms both;
 }
 
 .test4 {
@@ -500,8 +521,8 @@ footer i {
   overflow: hidden;
   -webkit-box-shadow: #dbdbdb 0 0.3em 0.5em;
           box-shadow: #dbdbdb 0 0.3em 0.5em;
-  -webkit-animation: menu-translate 1000ms 450ms both;
-          animation: menu-translate 1000ms 450ms both;
+  -webkit-animation: menu-translate 1000ms 2450ms both;
+          animation: menu-translate 1000ms 2450ms both;
 }
 
 @-webkit-keyframes menu-translate {
@@ -800,5 +821,105 @@ footer i {
   transition: opacity 300ms;
   -webkit-box-shadow: #b1b1b1 0em 0.3em 0.5em;
           box-shadow: #b1b1b1 0em 0.3em 0.5em;
+}
+
+.fa-spinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -24px;
+  font-size: 3em;
+  -webkit-animation: loading-spinner 3s both;
+          animation: loading-spinner 3s both;
+  z-index: 4;
+  color: #9356DC;
+}
+
+.loading_background {
+  position: fixed;
+  width: 375px;
+  height: 100%;
+  background-color: #f6f6f6;
+  z-index: 3;
+  -webkit-animation: loading_background_opacity 2s 2s both;
+          animation: loading_background_opacity 2s 2s both;
+}
+
+@-webkit-keyframes loading-spinner {
+  0% {
+    rotate: 0turn;
+  }
+  25% {
+    rotate: 1turn;
+  }
+  30% {
+    rotate: 1turn;
+  }
+  55% {
+    rotate: 2turn;
+  }
+  60% {
+    rotate: 2turn;
+  }
+  85% {
+    rotate: 3turn;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    rotate: 3turn;
+  }
+}
+
+@keyframes loading-spinner {
+  0% {
+    rotate: 0turn;
+  }
+  25% {
+    rotate: 1turn;
+  }
+  30% {
+    rotate: 1turn;
+  }
+  55% {
+    rotate: 2turn;
+  }
+  60% {
+    rotate: 2turn;
+  }
+  85% {
+    rotate: 3turn;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    rotate: 3turn;
+  }
+}
+
+@-webkit-keyframes loading_background_opacity {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    z-index: 3;
+  }
+  100% {
+    opacity: 0;
+    z-index: -3;
+  }
+}
+
+@keyframes loading_background_opacity {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    z-index: 3;
+  }
+  100% {
+    opacity: 0;
+    z-index: -3;
+  }
 }
 /*# sourceMappingURL=main.css.map */

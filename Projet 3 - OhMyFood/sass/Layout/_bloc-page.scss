@@ -1,13 +1,26 @@
 body {
     width: 375px;
     margin: auto;
+    margin-bottom: 0;
 }
 #bloc-page {
     width: 375px;
     margin: auto;
+    margin-bottom: 0;
     
 }
 
 a {
     text-decoration: none;
+}
+
+@media all and (min-width: 375px) and (max-width: 810px)
+{
+    body {
+        width: auto;
+    }
+
+    #bloc-page {
+        width: auto;
+    }
 }
