@@ -8,7 +8,7 @@
     list-style-type: none;  
     width: 95%;
     margin: auto;
-    }
+}
 
 .steps__elements {
     display: flex;
@@ -28,27 +28,62 @@
         }
     }
         
-        .number {
-            position: absolute;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            left: -13px;
-            bottom: 50%;
-            background-color: $color-primary;
-            color: white;
-            height: 26px;
-            width: 26px;
-            margin-bottom: -13px;
-            border-radius: 50% ;
-        }
-        i {
-            margin: 0 1em 0 2em;
-            width: 21.6px;
-            color: #7e7d7d;
-            transition: all 400ms;
+    .number {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: -13px;
+        bottom: 50%;
+        background-color: $color-primary;
+        color: white;
+        height: 26px;
+        width: 26px;
+        margin-bottom: -13px;
+        border-radius: 50% ;
+    }
+    i {
+        margin: 0 1em 0 2em;
+        width: 21.6px;
+        color: #7e7d7d;
+        transition: all 400ms;
+    }
+}
+
+@media all and (min-width: 376px) and (max-width: 1024px)
+{
+    p {
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+
+
+@media all and (min-width: 1024px)
+{
+    .steps {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        &__elements {
+            padding-right: 2em;
+            width: 25%;
+            justify-items: flex-end;
+            text-align: center;
+            
+            p {
+                text-align: center;
+                display: inline-block;
+                width: 100%;
+            }
         }
     }
+
+    
+}
 
    
 

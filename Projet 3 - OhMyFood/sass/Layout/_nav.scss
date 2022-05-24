@@ -17,3 +17,67 @@ nav {
     }
 
 }
+.restaurant_list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media all and (min-width: 376px) and (max-width: 1024px)
+{
+    .restaurant_list {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;   
+        justify-content: space-around;     
+    }
+
+    nav {
+        a {
+            max-width: 330px;
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+    }
+}
+
+@media all and (min-width: 1025px) and (max-width: 1448px)
+
+{
+    .restaurant_list {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;   
+        justify-content: space-around;     
+    }
+
+    nav {
+        a {
+            max-width: 45%;
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+    }
+}
+
+@media all and (min-width: 1449px)
+{
+    .restaurant_list {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;   
+        justify-content: space-around;     
+    }
+
+    nav {
+        a {
+            max-width: 22%;
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+    }
+}
