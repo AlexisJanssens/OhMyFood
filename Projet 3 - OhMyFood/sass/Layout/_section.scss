@@ -84,6 +84,34 @@
 
     }
 }
+
+@media all and (min-width: 376px) 
+{
+    .type {
+        width: 375px;
+    }
+
+    .menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .restaurant-name {
+        width: 100%;
+        h2 {
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    .btn_container {
+        background-color: $background-secondary;
+        display: flex;
+        justify-content: center;
+    }
+}
+
 .test {
     display: flex;
     margin: 1em;

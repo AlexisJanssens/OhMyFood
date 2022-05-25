@@ -52,10 +52,12 @@
 
 @media all and (min-width: 376px) and (max-width: 1024px)
 {
-    p {
-        text-align: center;
-        display: inline-block;
-        width: 100%;
+    nav{
+        p {
+            text-align: center;
+            display: inline-block;
+            width: 100%;
+        }
     }
 }
 
