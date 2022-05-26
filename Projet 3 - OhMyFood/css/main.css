@@ -62,7 +62,7 @@ footer h3 {
   font-size: 1.2em;
 }
 
-footer ul {
+footer li {
   font-size: 1em;
 }
 
@@ -182,6 +182,10 @@ header h1 {
   color: #444444;
   margin: 0;
   padding: 0 0.5em 1em;
+}
+
+.boxhead__heading a {
+  z-index: 2;
 }
 
 .arrow {
@@ -471,11 +475,12 @@ footer a:hover {
   color: #FF79DA;
 }
 
-footer ul {
-  padding-left: 32px;
+footer li {
+  padding-left: 0;
   margin-top: .2em;
   margin-bottom: 0;
   padding-bottom: .4em;
+  list-style: none;
 }
 
 footer i {
@@ -523,48 +528,40 @@ footer i {
   position: relative;
 }
 
-.restaurant-name i:hover .white_menu_header {
+.restaurant-name i .fa-solid {
+  color: #FF79DA;
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  opacity: 1;
+}
+
+.restaurant-name i .fa-regular {
+  z-index: 2;
+  position: absolute;
+  -webkit-transition: opacity 800ms;
+  transition: opacity 800ms;
+}
+
+.restaurant-name i .fa-regular:hover {
+  opacity: 0;
+}
+
+.restaurant-name i .fa-regular:hover + .white {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
 }
 
-.restaurant-name i:hover::before {
-  opacity: 0;
-}
-
-.restaurant-name i::before {
+.restaurant-name i .white {
   z-index: 1;
-  position: relative;
-  -webkit-transition: all 1s ease-out;
-  transition: all 1s ease-out;
-}
-
-.restaurant-name i::after {
-  content: "\f004";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  opacity: 1;
-  color: #FF79DA;
-}
-
-.white_menu_header {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #f6f6f6;
-  z-index: 0;
+  height: 27.2px;
+  width: 27.2px;
+  background-color: white;
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
-  -webkit-transition: all 1s ease-out;
-  transition: all 1s ease-out;
+  -webkit-transition: all 800ms ease-out;
+  transition: all 800ms ease-out;
 }
 
 .type {
@@ -931,12 +928,17 @@ footer i {
 }
 
 .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
+  margin: auto;
   margin-bottom: 3.5em;
   margin-top: 0.8em;
   height: 3em;
+  width: 250px;
   border: none;
   border-radius: 2em;
   padding: 0 1.5em 0.1em;
@@ -944,6 +946,12 @@ footer i {
           box-shadow: #dbdbdb 0 0.3em 0.5em;
   position: relative;
   z-index: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .btn:hover .btn__bg {

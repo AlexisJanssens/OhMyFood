@@ -24,49 +24,39 @@
     i {
         margin-right: 1.2em;
         position: relative;
-        &:hover {
-            .white_menu_header {
+        .fa-solid {
+            color: $color-secondary;
+            position: absolute;
+            left: 0;
+            z-index: 0;
+            opacity: 1;
+        }
+    
+        .fa-regular {
+            z-index: 2;
+            position: absolute;
+            transition: opacity 800ms;
+    
+            &:hover {
+                opacity: 0;
+    
+            }
+            &:hover + .white{
                 transform: translateY(-100%);
             }
-            &::before {
-                opacity: 0;
-            }
         }
-
-        &::before {
+        .white {
             z-index: 1;
-            position: relative;
-            transition: all 1s ease-out;
-        }
-        
-        &::after {
-            content: "\f004";
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
             position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index: -1;
-            opacity: 1;
-            color: $color-secondary;
+            height: 27.2px;
+            width: 27.2px;
+            background-color:white;
+            transform: translateY(0%);
+            transition: all 800ms ease-out;
         }
     }
 }
 
-.white_menu_header {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: $background-secondary;
-    z-index: 0;
-    transform: translateY(0%);
-    transition: all 1s ease-out;
-
-}
 
 .type {
     margin-bottom: 2.5em;
