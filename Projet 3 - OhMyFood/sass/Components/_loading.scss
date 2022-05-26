@@ -21,33 +21,33 @@
 
 @keyframes loading-spinner {
     0% {
-        rotate: 0turn;
+        transform:rotate(0deg);
     }
 
     25% {
-        rotate: 1turn;
+        transform:rotate(360deg);
     }
 
     30% {
-        rotate: 1turn;
+        transform:rotate(360deg);
     }
     
     55% { 
-        rotate: 2turn;
+        transform:rotate(720deg);
     }
 
     60% { 
-        rotate: 2turn;
+        transform:rotate(720deg);
     }
 
     85% {
-        rotate: 3turn;
+        transform:rotate(1080deg);
         opacity: 1;
     }
 
     100% {
         opacity: 0;
-        rotate: 3turn;
+        transform:rotate(1080deg);
     }
 }
 

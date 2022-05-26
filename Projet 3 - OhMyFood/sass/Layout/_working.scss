@@ -8,6 +8,7 @@
     list-style-type: none;  
     width: 95%;
     margin: auto;
+    padding-left: 0;
 }
 
 .steps__elements {
@@ -50,16 +51,7 @@
     }
 }
 
-@media all and (min-width: 376px) and (max-width: 1024px)
-{
-    nav{
-        p {
-            text-align: center;
-            display: inline-block;
-            width: 100%;
-        }
-    }
-}
+
 
 
 
