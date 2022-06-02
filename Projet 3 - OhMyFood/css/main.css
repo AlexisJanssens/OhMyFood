@@ -777,8 +777,6 @@ footer i {
           transform: translateX(100%) rotate(-720deg);
   -webkit-transition: all 400ms;
   transition: all 400ms;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 
 .dishes__description {
