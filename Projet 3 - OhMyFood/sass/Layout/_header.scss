@@ -2,6 +2,8 @@ header {
     h1 {
         text-align: center;
         margin-bottom: 0.2em;
+        margin-top: 0;
+        padding-top: 0.5em;
 
     }
 }
@@ -49,14 +51,16 @@ header {
     bottom: 0;
     right: 0;
     left: 0;
-    margin-bottom: 1em;
-    margin-top: 1em;
+    margin-bottom: 0.5em;
+    margin-top: 0;
+    padding-top: 0.5em;
+    font-size: 28px;
     img {
         margin: auto;
     }
     i {
         position: absolute;
-        top: 3px;
+        top: 0.63em;
         left: 1em;
         font-size: 28px;
     }
@@ -81,5 +85,21 @@ header {
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+}
+
+.restaurant-name {
+    .like {
+        .white {
+            background-color: $background-secondary;
+        }
+
+    }
+}
+
+@media all and (min-width: 375px) 
+{
+    .boxhead__heading {
+        width: 100%;
     }
 }

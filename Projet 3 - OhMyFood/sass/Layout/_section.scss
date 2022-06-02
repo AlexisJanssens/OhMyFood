@@ -1,19 +1,21 @@
 .menu {
     background-color: $background-secondary;
     margin: 0;
-    position: relative;
-    bottom: 50px;
-    z-index: 1;
     margin-top: 0;
-    padding-top: 2.2em;
-    border-radius: 2.2em 2.2em 0 0 ;
     display: flex;
     flex-direction: column; 
 }
 
 .restaurant-name {
+    position: relative;
+    top: -40px;
+    background-color: #f6f6f6;
+    border-radius: 2.2em 2.2em 0 0 ;
+    padding: 1em 0 0 0 ;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
     h2 {
         margin-top: 0;
         margin-bottom: 0;
@@ -21,11 +23,44 @@
     }
     i {
         margin-right: 1.2em;
+        position: relative;
+        .fa-solid {
+            color: $color-secondary;
+            position: absolute;
+            left: 0;
+            z-index: 0;
+            opacity: 1;
+        }
+    
+        .fa-regular {
+            z-index: 2;
+            position: absolute;
+            transition: opacity 800ms;
+    
+            &:hover {
+                opacity: 0;
+    
+            }
+            &:hover + .white{
+                transform: translateY(-100%);
+            }
+        }
+        .white {
+            z-index: 1;
+            position: absolute;
+            height: 27.2px;
+            width: 27.2px;
+            background-color:white;
+            transform: translateY(0%);
+            transition: all 800ms ease-out;
+        }
     }
 }
 
+
 .type {
     margin-bottom: 2.5em;
+    overflow: hidden;
     h3 {
         text-transform: uppercase;
         padding-left: 1.3em;
@@ -40,32 +75,166 @@
     }
 }
 
+@media all and (min-width: 376px) 
+{
+    .type {
+        width: 375px;
+    }
+
+    .menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .restaurant-name {
+        width: 100%;
+        h2 {
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    .btn_container {
+        background-color: $background-secondary;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.test {
+    display: flex;
+    margin: 1em;
+    padding: 0;
+    border-radius: 1em;
+    overflow: hidden;
+    @include shadowbox;
+    animation: menu-translate 1000ms 2000ms both;
+}
+
+.test2 {
+    display: flex;
+    margin: 1em;
+    padding: 0;
+    border-radius: 1em;
+    overflow: hidden;
+    @include shadowbox;
+    animation: menu-translate 1000ms 2150ms both;
+}
+
+.test3 {
+    display: flex;
+    margin: 1em;
+    padding: 0;
+    border-radius: 1em;
+    overflow: hidden;
+    @include shadowbox;
+    animation: menu-translate 1000ms 2300ms both;
+}
+
+.test4 {
+    display: flex;
+    margin: 1em;
+    padding: 0;
+    border-radius: 1em;
+    overflow: hidden;
+    @include shadowbox;
+    animation: menu-translate 1000ms 2450ms both;
+}
+@keyframes menu-translate {
+    0% {
+        transform: translateY(500%);
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.border {
+    display: flex;
+    margin: 1em;
+    padding: 0;
+    border-radius: 1em;
+    overflow: hidden;
+    @include shadowbox;
+}
+
+
 .dishes {
     background-color: white;
-    margin: 1em;
+    margin: 0;
+    margin-right: 0;
     padding: 0.8em;
     @include shadowbox;
-    border-radius: 1em;
+    width: 100%;
+    transition: all 1s;
+    overflow: hidden;
+    white-space: nowrap;
+    
+    &:hover + .validate {
+        padding-right: 1em;
+        padding-left: 1em;
+        width: 50px;
+        i{
+            transform:  translateY(0%) rotate(0deg);
+        }
+    }
     &__name {
+        text-overflow: ellipsis;
+        overflow: hidden;
 
     }
     &__description {
         display: flex;
         justify-content: space-between;
-        text-transform: none;
-    }
+        text-transform: none; 
+        
+    } 
+}
 
+.validate {
+    background-color: $color-tertiary;
+    padding-left: 0;
+    padding-right: 0;
+    @include shadowbox;
+    display: flex;
+    height: 75.6px;
+    width: 0%;
+    overflow: hidden;
+    margin: 0;
+    margin-left: 0;
+    transition: all 400ms;
+    i{
+        align-self: center;
+        color: white;
+        font-size: $font-size-XL;
+        margin: auto;
+        transform: translateX(100%) rotate(-720deg);
+        transition: all 400ms;
+    }
 }
 
 .dishes__description {
     padding-top: 0.3em;
     p{
         margin: 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
     .price {
         align-self: center;
+        padding-left: 1em;
     }
 }
+
+
 
 .menu .btn {
     align-self: center;
@@ -74,7 +243,3 @@
 
 }
 
-.not-homepage {
-    position: relative;
-    bottom: 50px;
-}
