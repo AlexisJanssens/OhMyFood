@@ -1,0 +1,24 @@
+//Colors
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$color-primary-darken: #9c66df;
+$color-secondary-darken: #fc8cdc;
+$background-secondary: #f6f6f6;
+$color-box-shadow : #dbdbdb;
+//polices
+$font-size-XXL: 1.7em;
+$font-size-XL: 1.65em;
+$font-size-M: 1.2em;
+$font-size-S: 1.1em;
+$font-size-XS: 1em;
+$font-size-XXS: 0.8em;
+$font-weight-XL: 600;
+$font-weight-L: 500;
+$font-weight-M: 400;
+$font-weight-S: 300;
+$font-weight-XS: 200;
+//mixins
+@mixin shadowbox ($color: $color-box-shadow){
+    box-shadow: $color 0 .3em .5em;
+}

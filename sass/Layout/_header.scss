@@ -1,0 +1,105 @@
+header {
+    h1 {
+        text-align: center;
+        margin-bottom: 0.2em;
+        margin-top: 0;
+        padding-top: 0.5em;
+
+    }
+}
+
+//homepage
+
+.boxhead {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__localisation {
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(#bbbbbb, #eaeaea 5px);
+        width: 100%;
+        text-align: center;
+        color: #464646;
+        i {
+            align-self: center;
+            margin-right: 1em;
+        }
+    }
+}
+
+.boxhead__heading {
+    text-align: center;
+    background-color: $background-secondary;
+    h2 {
+        padding: 1.5em 1.5em 0.5em;
+        margin: 0;
+    }
+    p {
+        color: rgb(68, 68, 68);
+        margin: 0;
+        padding: 0 0.5em 1em;
+    }
+}
+
+//menus
+
+.arrow {
+    display: flex;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-bottom: 0.5em;
+    margin-top: 0;
+    padding-top: 0.5em;
+    font-size: 28px;
+    img {
+        margin: auto;
+    }
+    i {
+        position: absolute;
+        top: 0.63em;
+        left: 1em;
+        font-size: 28px;
+    }
+}
+
+.arrow {
+    a{
+        i {
+            color: black;
+        }
+        i:hover {
+        color: $color-secondary;
+        }   
+    }
+}
+
+.header__img {
+    width: 100%;
+    height: 250px;
+    z-index: -1;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.restaurant-name {
+    .like {
+        .white {
+            background-color: $background-secondary;
+        }
+
+    }
+}
+
+@media all and (min-width: 375px) 
+{
+    .boxhead__heading {
+        width: 100%;
+    }
+}
